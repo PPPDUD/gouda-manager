@@ -21,8 +21,8 @@ sudo ./install.sh
 ~~~
 
 ### Upgrading Gouda
-Once Gouda is installed, you can upgrade it to the latest version by running `gouda-upgrade gouda-manager/`.
+Once Gouda is installed, you can upgrade it to the latest version by running `sudo gouda-upgrade gouda-manager/`.
 
 ### Uninstalling Gouda
-The Gouda package manager can be uninstalled by running `gouda-uninstall gouda-manager/`. If you want to remove all of your Gouda packages as well, use `gouda-uninstall /opt/gouda-packages/* && rmdir /opt/gouda-packages` instead.
+The Gouda package manager can be uninstalled by running `sudo gouda-uninstall gouda-manager/`. If you want to remove all of your Gouda packages as well, use `sudo gouda-uninstall /opt/gouda-packages/* && sudo rmdir /opt/gouda-packages` instead.
 
