@@ -8,12 +8,12 @@ In order to install Gouda, you need to have the `git` version control system ins
 
 After you've installed Git, run the following snippet in your terminal:
 ~~~bash
-mkdir -p /opt/gouda-packages/
+sudo mkdir -p /opt/gouda-packages/
 cd /opt/gouda-packages/
-git clone https://github.com/PPPDUD/gouda-manager.git
+sudo git clone https://github.com/PPPDUD/gouda-manager.git
 cd gouda-manager/
-chmod +x *.sh
-./install.sh
+sudo chmod +x *.sh
+sudo ./install.sh
 ~~~
 
 ### Upgrading Gouda
