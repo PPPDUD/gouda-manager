@@ -4,6 +4,9 @@ This is the GitHub repository for the base _Gouda_ package, which is a minimally
 Most package managers (`apt`, `dpkg`, etc.) are built around having a single, canonical package location where every package must provide detailed metadata, and the package manager is expected to handle things like upgrades and uninstalls on its own. Gouda is different: it lets each package choose how it should be installed/uninstalled/upgraded/configured, like most Windows applications.
 
 ## Installation
+> [!WARNING]
+> Gouda is in early development, and it may have bugs that result in damage to your system or loss of data. You are solely responsible for any damages caused by using Gouda at this time.
+
 In order to install Gouda, you need to have the `git` version control system installed. On most Debian-based systems, you can install Git by running `sudo apt install git`.
 
 After you've installed Git, run the following snippet in your terminal:
