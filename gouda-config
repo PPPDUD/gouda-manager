@@ -5,5 +5,7 @@ for arg
 do
 if [[ -d "$arg" ]]; then 
 chmod +x "$arg"'/config.sh' && "$arg"'/config.sh'
+else
+echo "$arg"' does not exist.' >&2
 fi
 done

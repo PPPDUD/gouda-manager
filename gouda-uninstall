@@ -3,7 +3,10 @@ gouda-chkroot
 cd /opt/gouda-packages/
 for arg
 do
-if [[ -d "$arg" ]]; then 
+if [[ -d "$arg" ]]; then
+echo 'Uninstalling '"$arg"'...'
 chmod +x "$arg"'/uninstall.sh' && "$arg"'/uninstall.sh'
+else
+echo "$arg"' does not exist.' >&2
 fi
 done
