@@ -12,6 +12,7 @@ sudo mkdir -p /opt/gouda-packages/
 cd /opt/gouda-packages/
 sudo git clone https://github.com/PPPDUD/gouda-manager.git
 cd gouda-manager/
+git config core.fileMode false
 sudo chmod +x *.sh
 sudo ./install.sh
 ~~~
