@@ -2,5 +2,8 @@
 gouda-chkroot
 cd /opt/gouda-packages/
 for arg
-do chmod +x "$arg"'/config.sh' && "$arg"'/config.sh'
+do
+if [[ -d "$arg" ]]; then 
+chmod +x "$arg"'/config.sh' && "$arg"'/config.sh'
+fi
 done

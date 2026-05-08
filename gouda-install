@@ -2,5 +2,8 @@
 gouda-chkroot
 cd /opt/gouda-packages/
 for arg
-do chmod +x "$arg"'/install.sh' && "$arg"'/install.sh'
+do 
+if [[ -d "$arg" ]]; then 
+chmod +x "$arg"'/install.sh' && "$arg"'/install.sh'
+fi
 done
