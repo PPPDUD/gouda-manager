@@ -2,5 +2,8 @@
 gouda-chkroot
 cd /opt/gouda-packages/
 for arg
-do chmod +x "$arg"'/uninstall.sh' && "$arg"'/uninstall.sh'
+do
+if [[ -d "$arg" ]]; then 
+chmod +x "$arg"'/uninstall.sh' && "$arg"'/uninstall.sh'
+fi
 done
