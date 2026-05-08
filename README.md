@@ -26,3 +26,21 @@ Once Gouda is installed, you can upgrade it to the latest version by running `su
 ### Uninstalling Gouda
 The Gouda package manager can be uninstalled by running `sudo gouda-uninstall gouda-manager/`. If you want to remove all of your Gouda packages as well, use `sudo gouda-uninstall /opt/gouda-packages/* && sudo rmdir /opt/gouda-packages` instead.
 
+## Package management
+### Installing a package from a directory
+To install a Gouda package from a directory, run `gouda-install <DIRECTORY>`, where `DIRECTORY` is either:
+- the path of a system-global Gouda package, relative to `/opt/gouda-packages/`;
+- or the absolute path of a local Gouda package, for example `~/mypkg/`
+
+Note that most packages will install to system directories such as `/usr/local/bin` even if they're being installed from a non-system path.
+
+### Uninstalling a package
+To uninstall a Gouda package, run `gouda-uninstall <DIRECTORY>`; `DIRECTORY` follows the same rules as it does for installation.
+
+Note that because Gouda itself doesn't track where packages store their files, it's possible for some residue to be left by mistake; if this occurs, consider reporting it to the package's developer(s).
+
+### Configuring a package
+Some packages might offer a configuration utility; to activate it, run `gouda-config <DIRECTORY>`.
+
+### Upgrading a package
+Packages can be upgraded using `gouda-upgrade <DIRECTORY>`. Note that Gouda doesn't have a versioning system built-in, so packages must implement upgrading themselves.
