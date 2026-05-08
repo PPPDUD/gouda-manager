@@ -1,4 +1,5 @@
 #!/usr/bin/bash
+gouda-chkroot
 cd /opt/gouda-packages/
 for arg
 do chmod +x "$arg"'/upgrade.sh' && "$arg"'/upgrade.sh'

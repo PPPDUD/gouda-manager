@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+# Internal script for showing a warning if Gouda isn't being run as root.
+if [[ $EUID -ne 0 ]]; then
+   read -p "Warning! You are not currently running as the root user. If you want to quit, type Ctrl+C; otherwise, press [ENTER]. "
+fi
