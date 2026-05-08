@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+cd /opt/gouda-packages/
+for arg
+do chmod +x "$arg"'/config.sh' && "$arg"'/config.sh'
+done
